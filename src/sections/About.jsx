@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex-1">
           <img
             src={aboutImage}
-            alt="About VoxCyber"
+            alt="About VOXCYBER"
             className="rounded-xl shadow-lg w-full object-cover"
           />
         </div>
@@ -20,7 +20,7 @@ export default function About() {
             Empowering Your Digital Lifestyle
           </h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            At VoxCyber Technologies, we help you stay ahead with innovative tech 
+            At VOXCYBER Technologies, we help you stay ahead with innovative tech 
             solutions and devices designed for modern living — from smart accessories 
             to high-performance computing tools.
           </p>

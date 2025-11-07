@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 text-lg text-gray-300">
-          At VoxCyber Technologies, we provide top-tier laptops, desktops,
+          At VOXCYBER Technologies, we provide top-tier laptops, desktops,
           tech accessories, audio gear, and digital essentials, all at affordable
           prices, with the reliability you deserve.
         </p>
