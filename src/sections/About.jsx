@@ -21,7 +21,7 @@ export default function About() {
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">
-            At VOXCYBER Technologies, we help you stay ahead with innovative tech 
+            At VOXCYBER technologies, we help you stay ahead with innovative tech 
             solutions and devices designed for modern living, from smart accessories 
             to high-performance computing tools.
           </p>

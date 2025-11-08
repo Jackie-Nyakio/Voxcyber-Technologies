@@ -21,7 +21,7 @@ export default function InfoSection() {
           </h2>
 
           <p className="text-gray-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">
-            At <span className="font-semibold text-primary">VOXCYBER Technologies</span>, 
+            At <span className="font-semibold text-primary">VOXCYBER technologies</span>, 
             we deliver cutting-edge tech devices designed for performance, durability, 
             and modern living. Whether you’re setting up your workstation, upgrading 
             your setup, or seeking reliable accessories, our products ensure power 

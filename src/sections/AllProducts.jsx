@@ -69,8 +69,8 @@ export default function AllProducts() {
           </h2>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             Explore the latest range of tech essentials from{" "}
-            <span className="font-semibold text-blue-700">VOXCYBER Technologies</span>.
-            From powerful computers to compact accessories — performance meets reliability.
+            <span className="font-semibold text-blue-700">VOXCYBER technologies</span>.
+            From powerful computers to compact accessories, performance meets reliability.
           </p>
         </div>
 

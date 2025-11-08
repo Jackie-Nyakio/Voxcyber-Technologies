@@ -20,9 +20,18 @@ export default function Hero() {
           prices, with the reliability you deserve.
         </p>
 
-        <button className="mt-8 px-6 py-3 bg-blue-700 hover:bg-blue-800 transition rounded-md font-semibold">
-          Shop Now
-        </button>
+        <button
+        className="mt-8 px-6 py-3 bg-blue-700 hover:bg-blue-800 transition rounded-md font-semibold text-white"
+        onClick={() => {
+        const section = document.getElementById("all-products");
+        if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  Shop Now
+</button>
+
       </div>
 
       {/* Stats Bar */}
