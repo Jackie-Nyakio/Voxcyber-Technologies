@@ -5,7 +5,7 @@ import hdmiSplitter from "../assets/images/hdmi-splitter.jpg";
 
 export default function NewInStore() {
   return (
-    <section className="bg-white py-10 md:py-12 mt-[-110px]">
+    <section className="bg-white py-10 md:py-12 mt-[-105px]">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         {/* White Background Card */}

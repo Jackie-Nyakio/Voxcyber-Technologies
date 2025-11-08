@@ -1,5 +1,4 @@
 import heroImage from "../assets/images/heroImage.png";
-
 export default function Hero() {
   return (
     <section

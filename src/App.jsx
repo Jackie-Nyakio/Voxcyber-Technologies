@@ -2,6 +2,7 @@ import Header from "./components/layout/Header";
 import Hero from "./sections/Hero";
 import About from "./sections/About"; // import the About section
 import NewInStore from "./sections/NewInStore"; //import NewInStore section
+import InfoSection from "./sections/InfoSection"; //import InfoSection
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <About /> {/* added here */}
       <NewInStore />
+      <InfoSection />
     </div>
   );
 }
