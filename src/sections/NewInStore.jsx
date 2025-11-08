@@ -19,13 +19,16 @@ export default function NewInStore() {
             <p className="text-gray-600 text-base md:text-lg mb-4 leading-relaxed">
               Get the latest devices immediately <br /> with promo prices.
             </p>
-            <button
-              type="button"
-              className="text-blue-700 font-semibold underline hover:text-blue-800 border-none outline-none focus:outline-none"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              Check All →
-            </button>
+           <button
+          type="button"
+          className="text-blue-700 font-semibold underline hover:text-blue-800 border-none outline-none focus:outline-none"
+          onClick={() =>
+          document.getElementById("all-products").scrollIntoView({ behavior: "smooth" })
+         }
+>
+        Check All →
+        </button>
+
           </div>
 
           {/* RIGHT SIDE — PRODUCTS */}

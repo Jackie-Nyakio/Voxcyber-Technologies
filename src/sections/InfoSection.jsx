@@ -24,7 +24,7 @@ export default function InfoSection() {
             At <span className="font-semibold text-primary">VOXCYBER Technologies</span>, 
             we deliver cutting-edge tech devices designed for performance, durability, 
             and modern living. Whether you’re setting up your workstation, upgrading 
-            your setup, or seeking reliable accessories — our products ensure power 
+            your setup, or seeking reliable accessories, our products ensure power 
             meets precision.
           </p>
 
