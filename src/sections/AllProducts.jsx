@@ -9,68 +9,31 @@ import WirelessMouseKeyboard from "../assets/images/WirelessMouseAndKeyboard.jpg
 
 export default function AllProducts() {
   const products = [
-    {
-      name: "EarPods",
-      price: "KES 2,500",
-      oldPrice: "KES 3,500",
-      image: EarPods,
-    },
-    {
-      name: "Epson Printer",
-      price: "KES 12,000",
-      oldPrice: "KES 14,000",
-      image: EpsonPrinter,
-    },
-    {
-      name: "External Hard Disk",
-      price: "KES 8,000",
-      oldPrice: "KES 9,500",
-      image: ExternalHardDisk,
-    },
-    {
-      name: "Flash Drives & Memory Cards",
-      price: "KES 1,500",
-      oldPrice: "KES 2,500",
-      image: FlashDrives,
-    },
-    {
-      name: "Headphones",
-      price: "KES 6,000",
-      oldPrice: "KES 7,000",
-      image: HeadPhones,
-    },
-    {
-      name: "Original Ink Cartridge",
-      price: "KES 2,000",
-      oldPrice: "KES 3,000",
-      image: InkCartridge,
-    },
-    {
-      name: "Refurbished Desktop",
-      price: "KES 30,000",
-      oldPrice: "KES 35,000",
-      image: RefurbishedDesktop,
-    },
-    {
-      name: "Wireless Mouse & Keyboard",
-      price: "KES 4,500",
-      oldPrice: "KES 6,000",
-      image: WirelessMouseKeyboard,
-    },
+    { name: "EarPods", price: "KES 2,500", oldPrice: "KES 3,500", image: EarPods },
+    { name: "Epson Printer", price: "KES 22,000", oldPrice: "KES 24,000", image: EpsonPrinter },
+    { name: "External Hard Disk", price: "KES 8,000", oldPrice: "KES 9,500", image: ExternalHardDisk },
+    { name: "Flash Drives & Memory Cards", price: "KES 1,500", oldPrice: "KES 2,500", image: FlashDrives },
+    { name: "Headphones", price: "KES 6,000", oldPrice: "KES 7,000", image: HeadPhones },
+    { name: "Original Ink Cartridge", price: "KES 4,000", oldPrice: "KES 5,000", image: InkCartridge },
+    { name: "Refurbished Desktop", price: "KES 30,000", oldPrice: "KES 35,000", image: RefurbishedDesktop },
+    { name: "Wireless Mouse & Keyboard", price: "KES 4,500", oldPrice: "KES 6,000", image: WirelessMouseKeyboard },
   ];
+
+  // Add to cart function
+  const handleAddToCart = (productName) => {
+    alert(`${productName} added to cart`);
+  };
 
   return (
     <section id="all-products" className="py-0 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Title */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700">
-            All Products
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-700">All Products</h2>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
             Explore the latest range of tech essentials from{" "}
             <span className="font-semibold text-blue-700">VOXCYBER technologies</span>.
-            From powerful computers to compact accessories, performance meets reliability.
+            From powerful computers to compact accessories — performance meets reliability.
           </p>
         </div>
 
@@ -90,6 +53,7 @@ export default function AllProducts() {
                 />
                 {/* Plus Button - bottom right */}
                 <button
+                  onClick={() => handleAddToCart(product.name)}
                   className="absolute bottom-2 right-2 bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold shadow-md hover:bg-blue-800 transition"
                   title="Add to Cart"
                 >
