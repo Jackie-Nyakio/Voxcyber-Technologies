@@ -2,7 +2,7 @@ import aboutImage from "../assets/images/aboutImage.png";
 
 export default function About() {
   return (
-    <section className="bg-white py-12 md:py-16 mt-6 mb-0">
+    <section className="bg-white py-12 md:py-16 mt-[40px] mb-0">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row items-center gap-10">
         
         {/* Left Image */}
@@ -16,32 +16,32 @@ export default function About() {
 
         {/* Right Text */}
         <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700 mb-4">
             Empowering Your Digital Lifestyle
           </h2>
 
-          <p className="text-gray-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">
-            At VOXCYBER technologies, we help you stay ahead with innovative tech 
-            solutions and devices designed for modern living, from smart accessories 
+          <p className="text-gray-700 mb-6 md:mb-8 leading-relaxed text-sm md:text-base font-medium">
+            At <span className="font-semibold text-blue-600">VOXCYBER Technologies</span>, we help you stay ahead with 
+            innovative tech solutions and devices designed for modern living from smart accessories 
             to high-performance computing tools.
           </p>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900">
                 Reliable Device Solutions
               </h3>
-              <p className="text-gray-500 text-sm md:text-base">
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 We provide tested and trusted devices that ensure reliability,
                 quality, and long-term value for your tech needs.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900">
                 Smart Tech Support
               </h3>
-              <p className="text-gray-500 text-sm md:text-base">
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 Our expert support ensures your digital tools work seamlessly,
                 so you can focus on what truly matters.
               </p>

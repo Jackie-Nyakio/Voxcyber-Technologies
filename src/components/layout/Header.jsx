@@ -15,7 +15,7 @@ export default function Header() {
         />
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-10 text-white text-[13px] font-medium">
+        <ul className="hidden md:flex items-center gap-10 text-gray-100 text-[14px] font-semibold tracking-wide drop-shadow-sm">
           {["Home", "About", "Features", "Contact"].map((item, index) => (
             <li
               key={index}
@@ -28,7 +28,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white text-3xl p-[4px]"
+          className="md:hidden text-gray-100 text-3xl p-[4px] hover:text-blue-400 transition-colors duration-200"
           onClick={() => setOpen(!open)}
         >
           ☰
@@ -37,7 +37,7 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       {open && (
-        <div className="md:hidden bg-black/80 backdrop-blur-sm text-white px-6 py-4 space-y-4 text-[14px]">
+        <div className="md:hidden bg-black/90 backdrop-blur-sm text-gray-100 px-6 py-4 space-y-4 text-[15px] font-medium tracking-wide shadow-lg">
           {["Home", "About", "Features", "Contact"].map((item, index) => (
             <p
               key={index}
