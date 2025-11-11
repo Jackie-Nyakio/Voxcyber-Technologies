@@ -4,7 +4,7 @@ import iconLinkedIn from "../../assets/images/linkedin.jpg";
 import iconTwitter from "../../assets/images/twitter.jpg";
 import iconInstagram from "../../assets/images/instagram.webp";
 import iconGithub from "../../assets/images/github.jpg";
-import logoVoxcyber from "../../assets/images/voxcyber-logo.png"; // 👈 your logo file
+import logoVoxcyber from "../../assets/images/voxcyber-logo.png"; // my logo
 
 export default function Footer() {
   return (
@@ -135,7 +135,7 @@ export default function Footer() {
 
         {/* === Copyright Line === */}
         <div className="border-t border-blue-700 py-6 text-center text-blue-200 text-sm">
-          © VOXCYBER Technologies {new Date().getFullYear()} — All Rights Reserved
+          © VOXCYBER Technologies {new Date().getFullYear()} - All Rights Reserved
         </div>
       </div>
     </footer>

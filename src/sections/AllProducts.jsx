@@ -19,21 +19,24 @@ export default function AllProducts() {
     { name: "Wireless Mouse & Keyboard", price: "KES 4,500", oldPrice: "KES 6,000", image: WirelessMouseKeyboard },
   ];
 
-  // Add to cart function
   const handleAddToCart = (productName) => {
     alert(`${productName} added to cart`);
   };
 
   return (
-    <section id="all-products" className="py-0 bg-gray-50">
+    <section id="all-products" className="py-16 md:py-20 bg-gray-50 mt-[50px]">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Title */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700">All Products</h2>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+            All Products
+          </h2>
+          <p className="text-gray-600 text-[17px] max-w-2xl mx-auto leading-relaxed">
             Explore the latest range of tech essentials from{" "}
-            <span className="font-semibold text-blue-700">VOXCYBER technologies</span>.
-            From powerful computers to compact accessories performance meets reliability.
+            <span className="font-semibold text-blue-700">
+              VOXCYBER Technologies
+            </span>
+            . From powerful computers to compact accessories, performance meets reliability.
           </p>
         </div>
 
@@ -42,7 +45,7 @@ export default function AllProducts() {
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition relative"
+              className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition relative"
             >
               {/* Product Image */}
               <div className="relative w-full h-40 flex items-center justify-center mb-4">
@@ -51,7 +54,7 @@ export default function AllProducts() {
                   alt={product.name}
                   className="max-h-32 object-contain"
                 />
-                {/* Plus Button - bottom right */}
+                {/* Add to Cart Button */}
                 <button
                   onClick={() => handleAddToCart(product.name)}
                   className="absolute bottom-2 right-2 bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold shadow-md hover:bg-blue-800 transition"
@@ -62,14 +65,14 @@ export default function AllProducts() {
               </div>
 
               {/* Product Info */}
-              <h3 className="text-gray-800 font-semibold text-sm md:text-base">
+              <h3 className="text-gray-800 font-semibold text-[17px] mb-1">
                 {product.name}
               </h3>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-blue-700 font-bold text-sm md:text-base">
+              <div className="flex items-center gap-2">
+                <span className="text-blue-700 font-bold text-[17px]">
                   {product.price}
                 </span>
-                <span className="text-gray-400 text-xs line-through">
+                <span className="text-gray-400 text-sm line-through">
                   {product.oldPrice}
                 </span>
               </div>

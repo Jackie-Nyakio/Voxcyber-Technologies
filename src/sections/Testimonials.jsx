@@ -13,7 +13,7 @@ const TESTIMONIALS = [
     title: "IT Consultant, TechLink Africa",
     avatar: avatar1,
     quote:
-      "VOXCYBER Technologies has been my trusted partner for reliable gadgets and expert support. Their service quality is top-notch",
+      "VOXCYBER Technologies has been my trusted partner for reliable gadgets and expert support. Their service quality is top-notch.",
     image: testimonialImg1,
     alt: "Modern workspace with laptop and tech accessories",
   },
@@ -49,24 +49,23 @@ function Testimonials() {
   return (
     <section
       aria-label="Testimonials"
-      className="bg-white py-12 md:py-16 mt-[40px]"
+      className="bg-white py-16 md:py-20 mt-[50px]"
     >
-      <div className="max-w-7xl mx-auto px-[16px] md:px-[24px]">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
           What People Are Saying About Us
         </h2>
 
         {/* Grid layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left — Text block */}
           <div className="order-2 lg:order-1">
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-5">
               <img
                 src={TESTIMONIALS[index].avatar}
                 alt={TESTIMONIALS[index].name}
-                className="w-14 h-14 rounded-full object-cover shadow-md"
-                loading="lazy"
+                className="w-14 h-14 rounded-full object-cover shadow-md border border-gray-200"
               />
               <div>
                 <p className="font-semibold text-gray-900 text-[17px]">
@@ -83,18 +82,18 @@ function Testimonials() {
             </blockquote>
 
             {/* Controls */}
-            <div className="flex items-center gap-3 mt-[4px]">
+            <div className="flex items-center gap-3 mt-1">
               <button
                 onClick={prev}
                 aria-label="Previous"
-                className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 focus:outline-none"
+                className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 focus:outline-none transition"
               >
                 ←
               </button>
               <button
                 onClick={next}
                 aria-label="Next"
-                className="w-10 h-10 rounded-full bg-blue-700 text-white shadow flex items-center justify-center hover:bg-blue-800 focus:outline-none"
+                className="w-10 h-10 rounded-full bg-blue-700 text-white shadow flex items-center justify-center hover:bg-blue-800 focus:outline-none transition"
               >
                 →
               </button>
@@ -103,12 +102,11 @@ function Testimonials() {
 
           {/* Right — Image */}
           <div className="order-1 lg:order-2">
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-lg bg-gray-100 border border-gray-200 transition-all duration-300">
               <img
                 src={TESTIMONIALS[index].image}
                 alt={TESTIMONIALS[index].alt}
-                className="w-full h-64 md:h-80 object-cover"
-                loading="lazy"
+                className="w-full h-72 md:h-96 object-cover"
               />
             </div>
           </div>
