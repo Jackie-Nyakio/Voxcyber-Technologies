@@ -4,6 +4,7 @@ import About from "./sections/About"; // import the About section
 import NewInStore from "./sections/NewInStore"; //import NewInStore section
 import InfoSection from "./sections/InfoSection"; //import InfoSection
 import AllProducts from "./sections/AllProducts"; //import AllProducts
+import Testimonials from "./sections/Testimonials"; //import Testimonials
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NewInStore />
       <InfoSection />
       <AllProducts />
+      <Testimonials />
     </div>
   );
 }

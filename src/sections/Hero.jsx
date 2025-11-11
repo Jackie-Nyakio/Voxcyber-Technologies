@@ -15,7 +15,7 @@ export default function Hero() {
         </h1>
 
         {/* Two-line Paragraph */}
-        <p className="mt-6 text-[15px] md:text-[18px] text-gray-100 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
+        <p className="mt-6 text-[16px] md:text-[18px] text-gray-100 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
           At <span className="font-semibold text-blue-300">VOXCYBER Technologies</span>, we provide top-tier laptops, desktops,
           tech accessories, audio gear, and digital essentials all at affordable prices, with the reliability you deserve.
         </p>

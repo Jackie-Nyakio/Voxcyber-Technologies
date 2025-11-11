@@ -2,7 +2,7 @@ import infoImage from "../assets/images/infoImage.webp";
 
 export default function InfoSection() {
   return (
-    <section className="bg-white py-12 md:py-16 mt-[-100px] mb-0">
+    <section className="bg-white py-12 md:py-16 mt-[-40px] mb-0">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row-reverse items-center gap-10">
 
         {/* RIGHT — IMAGE */}
