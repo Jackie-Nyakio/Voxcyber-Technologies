@@ -49,7 +49,7 @@ function Testimonials() {
   return (
     <section
       aria-label="Testimonials"
-      className="bg-white py-16 md:py-20 mt-[50px]"
+      className="bg-white py-16 md:py-20 mt-[20px]"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Title */}

@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         {/* Right Text + Form */}
-        <div className="w-full md:w-1/2 px-10 py-16 md:px-16 text-center md:text-left">
+        <div className="w-full md:w-1/2 px-10 py-18 md:px-17 text-center md:text-left">
           <h2 className="text-3xl font-bold mb-2">
             Stay Connected with VOXCYBER
           </h2>

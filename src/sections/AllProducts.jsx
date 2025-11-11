@@ -7,6 +7,9 @@ import InkCartridge from "../assets/images/OriginalInkCartridge.jpg";
 import RefurbishedDesktop from "../assets/images/RefurbishedDesktop.jpg";
 import WirelessMouseKeyboard from "../assets/images/WirelessMouseAndKeyboard.jpg";
 
+import SectionWrapper from "../components/common/SectionWrapper";
+import Card from "../components/common/Card";
+
 export default function AllProducts() {
   const products = [
     { name: "EarPods", price: "KES 2,500", oldPrice: "KES 3,500", image: EarPods },
@@ -24,62 +27,27 @@ export default function AllProducts() {
   };
 
   return (
-    <section id="all-products" className="py-16 md:py-20 bg-gray-50 mt-[50px]">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        {/* Title */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
-            All Products
-          </h2>
-          <p className="text-gray-600 text-[17px] max-w-2xl mx-auto leading-relaxed">
-            Explore the latest range of tech essentials from{" "}
-            <span className="font-semibold text-blue-700">
-              VOXCYBER Technologies
-            </span>
-            . From powerful computers to compact accessories, performance meets reliability.
-          </p>
-        </div>
-
-        {/* Product Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition relative"
-            >
-              {/* Product Image */}
-              <div className="relative w-full h-40 flex items-center justify-center mb-4">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="max-h-32 object-contain"
-                />
-                {/* Add to Cart Button */}
-                <button
-                  onClick={() => handleAddToCart(product.name)}
-                  className="absolute bottom-2 right-2 bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold shadow-md hover:bg-blue-800 transition"
-                  title="Add to Cart"
-                >
-                  +
-                </button>
-              </div>
-
-              {/* Product Info */}
-              <h3 className="text-gray-800 font-semibold text-[17px] mb-1">
-                {product.name}
-              </h3>
-              <div className="flex items-center gap-2">
-                <span className="text-blue-700 font-bold text-[17px]">
-                  {product.price}
-                </span>
-                <span className="text-gray-400 text-sm line-through">
-                  {product.oldPrice}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+    <SectionWrapper id="all-products" className="bg-gray-50 mt-[-10px]">
+      {/* Title */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+          All Products
+        </h2>
+        <p className="text-gray-600 text-[17px] max-w-2xl mx-auto leading-relaxed">
+          Explore the latest range of tech essentials from{" "}
+          <span className="font-semibold text-blue-700">
+            VOXCYBER Technologies
+          </span>
+          . From powerful computers to compact accessories, performance meets reliability.
+        </p>
       </div>
-    </section>
+
+      {/* Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {products.map((product, index) => (
+          <Card key={index} product={product} onAdd={handleAddToCart} />
+        ))}
+      </div>
+    </SectionWrapper>
   );
 }
