@@ -5,6 +5,7 @@ import NewInStore from "./sections/NewInStore"; //import NewInStore section
 import InfoSection from "./sections/InfoSection"; //import InfoSection
 import AllProducts from "./sections/AllProducts"; //import AllProducts
 import Testimonials from "./sections/Testimonials"; //import Testimonials
+import Footer from "./components/layout/footer"; //import Footer
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <InfoSection />
       <AllProducts />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
