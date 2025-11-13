@@ -1,134 +1,182 @@
-# 🖥️ VOXCYBER Technologies — E-Commerce Platform
+# VoxCyber Technologies Web Application
 
-Welcome to **VOXCYBER Technologies**, a modern web application for browsing and purchasing quality tech gadgets and accessories.  
-Built with **React + Tailwind CSS**, this project focuses on simplicity, performance, and clean UI consistency.
-
----
-
-## 🚀 Overview
-
-VOXCYBER Technologies is a responsive and modern tech e-commerce website that showcases products such as printers, earphones, desktops, and accessories.
-
-### ✨ Core Features
-- ✅ Landing page with product highlights and testimonials  
-- 🛒 “All Products” section with interactive product cards  
-- 🎨 Consistent spacing, colors, and typography across components  
-- 🔒 Authentication system *(Login, Signup, and Logout — coming soon)*  
-- 📱 Fully responsive design (mobile, tablet, desktop)
-
----
-
-## 🧩 Tech Stack
-
-| Technology | Purpose |
-|-------------|----------|
-| **React (Vite)** | Front-end framework |
-| **Tailwind CSS** | Styling and layout |
-| **React Router** | Navigation (for future auth pages) |
-| **PropTypes** | Type safety for components |
-| **Git + GitHub** | Version control and collaboration |
-
----
-
-## 🗂️ Folder Structure
-
-src/
-├── assets/
-│ └── images/ # Product and testimonial images
-├── components/
-│ ├── common/
-│ │ ├── Button.jsx
-│ │ ├── Card.jsx
-│ │ └── SectionWrapper.jsx
-│ └── layout/
-│ ├── Header.jsx
-│ └── Footer.jsx
-├── pages/
-│ ├── Home.jsx # Landing page with Info, Testimonials, AllProducts
-│ ├── AllProducts.jsx # Product grid page
-│ └── Auth/ # (Login, Signup to be added)
-└── App.jsx
-
----
-
-## ⚙️ Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Jackie-Nyakio/voxcyber-technologies.git
-   cd voxcyber-technologies
-Install dependencies
-npm install
-
-Run the development server
-npm run dev
-
-Open in your browser
-Visit → http://localhost:5173
-
-🎨 Tailwind Configuration
-Color tokens defined in tailwind.config.cjs:
-theme: {
-  extend: {
-    colors: {
-      vox: {
-        50: "#eff6ff",
-        100: "#dbeafe",
-        500: "#1d4ed8",  // main brand blue
-        600: "#1e40af",
-        700: "#1e3a8a",
-      },
-    },
-  },
-}
+A modern **full-stack web platform** designed to provide a seamless user experience — starting from an elegant **landing page**, through secure **signup/login**, and into a personalized **dashboard**.  
+The system is built using **React (frontend)**, **Node.js/Express (backend)**, and **MongoDB (database)**.
 
 
-🧱 Reusable Components
-| Component              | Purpose                                                |
-| ---------------------- | ------------------------------------------------------ |
-| **Button.jsx**         | Styled button variants for consistent actions          |
-| **Card.jsx**           | Product card with image, price, and add-to-cart button |
-| **SectionWrapper.jsx** | Enforces consistent section spacing                    |
-| **AllProducts.jsx**    | Combines all reusable UI components                    |
+
+## Landing Page Overview
+
+The landing page serves as the **entry point** to the platform — showcasing VoxCyber’s services and sections like:
+
+- **Header** – Navigation bar for quick access to site sections.  
+- **Hero Section** – Main introduction and brand presentation.  
+- **About Section** – Information about the company and mission.  
+- **New In Store** – Highlights of latest projects or technologies.  
+- **Info Section** – Key statistics or updates.  
+- **All Products Section** – Lists services or products offered.  
+- **Testimonials** – Feedback from users or partners.  
+- **Authentication Buttons** – Login / Sign Up buttons located just above the footer.  
+- **Footer** – Company details, copyright, and contact info.
+
+The landing page is fully responsive and styled with **TailwindCSS**.
 
 
-🧠 Next Steps (Planned)
-🔐 Implement Login / Signup / Logout (Firebase or Express backend)
 
-🛍️ Add Cart & Checkout functionality
+## Authentication System
 
-🧾 Product filtering & sorting
+Users can:
+- **Sign Up** for a new account with email & password confirmation.  
+- **Log In** securely using JWT-based authentication.  
+- Receive **real-time feedback** (success/error messages).  
 
-🌐 Deploy final version to Vercel or Netlify
+### Backend Authentication Flow
+1. User submits credentials to `http://localhost:5000/api/register` or `/api/login`.
+2. Passwords are hashed using **bcrypt.js**.
+3. Upon login, a **JWT token** is generated and stored in the browser.
+4. This token grants access to the protected **Dashboard**.
 
-
-🧾 Example Commit Suggestions
-To maintain a clean commit history, use descriptive messages:
-git add .
-git commit -m "feat: add reusable Button and Card components"
-git commit -m "style: standardize section spacing with SectionWrapper"
-git commit -m "chore: update tailwind config with vox color palette"
-git commit -m "docs: update README.md with setup instructions"
-git push origin main
-
-👩🏽‍💻 Author
-
-Jackline Waweru
-Frontend Developer — VOXCYBER Technologies
-📍 Nairobi, Kenya
-🔗 GitHub Profile
-
-📄 License
-This project is licensed under the MIT License — feel free to use and modify for educational or portfolio purposes.
-
-“Innovation meets reliability — that’s VOXCYBER.”
+### Security Features
+- Passwords are never stored in plain text.
+- Tokens expire automatically after 1 hour.
+- Environment variables (.env) hide sensitive data.
 
 
----
 
-### Then commit it properly:
+## Dashboard
+
+After successful login, the user is redirected to a personalized **Dashboard**:
+
+- Displays a welcome message with the user’s email.  
+- Confirms that authentication succeeded.  
+- Provides a clear **Logout** button.  
+- Prevents access if the user is not logged in (redirects to `/auth`).  
+
+The dashboard uses localStorage to verify active sessions and ensures users cannot access it directly without logging in.
+
+
+
+## Logout Functionality
+
+When a user clicks **Logout**:
+1. The stored JWT token is removed from localStorage.  
+2. The user is redirected back to the **Landing Page** (`/`).  
+
+This ensures sessions are properly cleared for security.
+
+
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | React + Vite + TailwindCSS |
+| **Routing** | React Router DOM |
+| **Backend** | Node.js + Express.js |
+| **Database** | MongoDB (Mongoose) |
+| **Authentication** | JWT + bcrypt.js |
+| **Environment Config** | dotenv |
+
+
+
+## Folder Structure
+
+```
+
+Voxcyber-Technologies/
+│
+├── src/
+│   ├── Backend/
+│   │   ├── Server.js         # Express server + routes
+│   │   ├── User.js           # Mongoose user schema
+│   │   └── .env              # Environment variables (ignored)
+│   │
+│   ├── Frontend/
+│   │   ├── AuthForm.jsx      # Signup & login page
+│   │   └── Dashboard.jsx     # User dashboard
+│   │
+│   ├── components/
+│   │   └── layout/           # Header, Footer
+│   │
+│   ├── sections/             # Hero, About, Products, etc.
+│   └── App.jsx               # Main routing file
+│
+├── package.json
+└── README.md
+
+````
+
+
+
+## Environment Setup
+
+1️⃣ **Install Dependencies**
+
 ```bash
-git add README.md
-git commit -m "docs: update complete README with setup and overview"
-git push origin main
+npm install
+cd src/Backend
+npm install
+````
+
+2️⃣ **Setup `.env` in `src/Backend/`**
+
+```
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/?appName=Cluster0
+JWT_SECRET=voxcyber_secret
+PORT=5000
+```
+
+3️⃣ **Run Servers**
+
+Frontend:
+
+```bash
+npm run dev
+```
+
+Backend:
+
+```bash
+cd src/Backend
+npm start
+```
+
+Then open [http://localhost:5173](http://localhost:5173)
+
+
+
+## User Flow Summary
+
+| Step | Action                  | Outcome                                |
+| ---- | ----------------------- | -------------------------------------- |
+| 1️⃣  | Visit landing page      | View VoxCyber homepage                 |
+| 2️⃣  | Click “Login / Sign Up” | Redirects to `/auth`                   |
+| 3️⃣  | Register or login       | Authenticated via JWT                  |
+| 4️⃣  | Redirect to Dashboard   | Personalized welcome screen            |
+| 5️⃣  | Click “Logout”          | Session cleared → Back to landing page |
+
+
+
+## Future Enhancements
+
+* Add password reset and recovery
+* Admin dashboard for managing users
+* Improved analytics and user activity logs
+* Dark mode interface
+
+
+
+## Developer
+
+**Jackline Waweru**
+Built with React, Node.js, and MongoDB
+© 2025 VoxCyber Technologies. All Rights Reserved.
+
+
+
+## License
+
+This project is released under the **MIT License** – free to use, modify, and distribute.
+
+```
 
