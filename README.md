@@ -126,7 +126,7 @@ This project is licensed under the MIT License — feel free to use and modify f
 
 ---
 
-### ✅ Then commit it properly:
+### Then commit it properly:
 ```bash
 git add README.md
 git commit -m "docs: update complete README with setup and overview"
