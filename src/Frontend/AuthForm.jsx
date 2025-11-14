@@ -24,13 +24,13 @@ export default function AuthForm() {
       const res = await axios.post(url, payload);
 
       if (isLogin) {
-        // ✅ Ensure token exists and store it
+        // Ensure token exists and store it
         const token = res.data.token;
         if (token) {
           localStorage.setItem("token", token);
           setMessage("Login successful! Redirecting...");
 
-          // ✅ Navigate to dashboard
+          // Navigate to dashboard
           setTimeout(() => {
             window.location.href = "/dashboard";
           }, 1000);

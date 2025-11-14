@@ -7,7 +7,7 @@ The system is built using **React (frontend)**, **Node.js/Express (backend)**, a
 
 ## Landing Page Overview
 
-The landing page serves as the **entry point** to the platform — showcasing VoxCyber’s services and sections like:
+The landing page serves as the **entry point** to the platform - showcasing VoxCyber’s services and sections like:
 
 - **Header** – Navigation bar for quick access to site sections.  
 - **Hero Section** – Main introduction and brand presentation.  
@@ -163,6 +163,22 @@ Then open [http://localhost:5173](http://localhost:5173)
 * Admin dashboard for managing users
 * Improved analytics and user activity logs
 * Dark mode interface
+
+
+
+## Screenshots
+
+### Landing Page
+![Landing Page](./screenshots/landing-page.png)
+
+### Authentication (Login / Signup)
+![Authentication Page](./screenshots/auth-page.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
 
 
 

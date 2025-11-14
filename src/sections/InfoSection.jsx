@@ -20,7 +20,7 @@ export default function InfoSection() {
             Quality Tech. <br className="hidden md:block" /> Built for Performance.
           </h2>
 
-          <p className="text-gray-600 text-[17px] leading-relaxed max-w-xl mx-auto lg:mx-0">
+          <p className="text-gray-600 text-[18px] leading-relaxed max-w-xl mx-auto lg:mx-0">
             At{" "}
             <span className="font-semibold text-blue-700">
               VOXCYBER Technologies

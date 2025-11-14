@@ -27,13 +27,13 @@ export default function AllProducts() {
   };
 
   return (
-    <SectionWrapper id="all-products" className="bg-gray-50 mt-[-10px]">
+    <SectionWrapper id="all-products" className="bg-gray-50 mt-[-0px]">
       {/* Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
           All Products
         </h2>
-        <p className="text-gray-600 text-[17px] max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-[18px] max-w-2xl mx-auto leading-relaxed">
           Explore the latest range of tech essentials from{" "}
           <span className="font-semibold text-blue-700">
             VOXCYBER Technologies
