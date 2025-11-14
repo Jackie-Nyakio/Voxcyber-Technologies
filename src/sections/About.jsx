@@ -2,7 +2,7 @@ import aboutImage from "../assets/images/aboutImage.png";
 
 export default function About() {
   return (
-    <section className="bg-white py-16 md:py-20 mt-[100px] mb-0">
+    <section className="bg-white py-16 md:py-20 mt-[170px] mb-0">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row items-center gap-10">
         
         {/* LEFT — IMAGE */}

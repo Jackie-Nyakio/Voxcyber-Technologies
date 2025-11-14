@@ -27,7 +27,7 @@ export default function AllProducts() {
   };
 
   return (
-    <SectionWrapper id="all-products" className="bg-gray-50 mt-[-0px]">
+    <SectionWrapper id="all-products" className="bg-gray-50 mt-[-18px]">
       {/* Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
